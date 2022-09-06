@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Card Slider</title>
+
+    <link rel="shortcut icon" href="./src/imagens/pokebola.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/pokebola.png" alt="pokébola" class="pokebola">
+        <h1 class="titulo">MapDev Week</h1>
+    </header>
+
+    <main class="pokemon-slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="./src/imagens/seta.png" alt="seta voltar">
+        </button>
+
+        <ul class="lista-pokemons">
+            <li class="cartao selecionado fundo-1">
+                <div class="informacoes">
+                    <h2 class="nome">Pikachu</h2>
+                    <p class="vida">HP 35</p>
+                </div>
+                
+                <div class="container-imagem">
+                    <img src="./src/imagens/pokemons/pikachu.gif" alt="Pikachu" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo redondo, pernas curtas e uma longa cauda, quando macho, a cauda tem um formato de um raio, mas se o Pikachu for fêmea sua cauda ganha um coração na ponta.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2">
+                <div class="informacoes">
+                    <h2 class="nome">Bulbasaur</h2>
+                    <p class="vida">HP 45</p>
+                </div>
+                
+                <div class="container-imagem">
+                    <img src="./src/imagens/pokemons/bulbasaur.gif" alt="Bulbasaur" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Bulbasaur é um pequeno Pokémon quadrúpede que tem uma pele azul-esverdeada com manchas mais escuras. Tem olhos vermelhos com pupilas brancas, pontiagudas, estruturas em forma de orelhas no alto da cabeça e um focinho curto e rombudo com a boca larga. Um par de dentes pequenos e pontiagudos são visíveis no maxilar superior quando a boca está aberta. Cada uma das suas pernas grossas termina com três garras afiadas. Nas suas costas há um bulbo de planta verde, que é cultivado a partir de uma semente plantada no nascimento. O bulbo fornece energia através da fotossíntese, bem como das sementes ricas em nutrientes contidas no interior.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-3">
+                <div class="informacoes">
+                    <h2 class="nome">Charmander</h2>
+                    <p class="vida">HP 39</p>
+                </div>
+                
+                <div class="container-imagem">
+                    <img src="./src/imagens/pokemons/charmander.gif" alt="Charmander" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Charmander é um Pokémon do tipo fogo, parecido com um dinossauro. A maior parte de seu corpo é de cor laranja, enquanto seu ventre é de uma cor amarelo-clara pálida. A chama que arde na ponta da cauda é uma indicação das suas emoções.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-4">
+                <div class="informacoes">
+                    <h2 class="nome">Squirtle</h2>
+                    <p class="vida">HP 44</p>
+                </div>
+                
+                <div class="container-imagem">
+                    <img src="./src/imagens/pokemons/squirtle.webp" alt="Squirtle" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Squirtle é um Pokémon do tipo água. Tem uma pele azul claro e usa um casco, é uma calda azul. O casco de Squirtle não é apenas usado para a proteção. A forma arredondada do casco e as ranhuras em sua superfície ajudam a minimizar a resistência na água, permitindo que este Pokémon nade em altas velocidades.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-5">
+                <div class="informacoes">
+                    <h2 class="nome">Mewtwo</h2>
+                    <p class="vida">HP 106</p>
+                </div>
+                
+                <div class="container-imagem">
+                    <img src="./src/imagens/pokemons/mewtwo.gif" alt="Mewtwo" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Mewtwo foi criado geneticamente em um laboratório, sendo um clone do misterioso antigo Pokémon Mew. É uma criatura com uma postura humanóide, mas tem algumas características felinas. Mesmo que o poder científico dos humanos tenha criado este Pokémon, eles não conseguiram dotar Mewtwo com um coração compassivo.</p>
+                    
+                </div>
+            </li>
+
+            <li class="cartao fundo-6">
+                <div class="informacoes">
+                    <h2 class="nome">Mew</h2>
+                    <p class="vida">HP 100</p>
+                </div>
+                
+                <div class="container-imagem">
+                    <img src="./src/imagens/pokemons/mew.gif" alt="Mew" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Mew é um Pokémon muito curioso e inteligente que só vai aparecer para alguém com um coração puro. Ele adora brincar e nadar, e é conhecido por agir de forma muito infantil, às vezes, querendo que todo mundo confie para brincar com ele. Ele é atraído por canções de ninar e vai tentar ficar o mais próximo ao som da música possível. Ao todo, Mew é conhecido como uma espécie feliz, lúdico e otimista de Pokémon.</p>
+                </div>
+            </li>
+        </ul>
+        </ul>
+
+        <button class="btn-seta" id="btn-avancar">
+            <img src="./src/imagens/seta.png" alt="seta avançar">
+        </button>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
