@@ -1,7 +1,5 @@
-
 const btnAvancar = document.getElementById("btn-avancar");
 const btnVoltar = document.getElementById("btn-voltar");
-
 const cartoes = document.querySelectorAll(".cartao");
 let cartaoAtual = 0;
 
@@ -16,11 +14,13 @@ function mostrarCartao(indiceCartao) {
 
 btnAvancar.addEventListener('click', function(){
     if(cartaoAtual === cartoes.length -1){
-        cartaoAtual = -1;
+        cartaoAtual = 0;
+        esconderCartaoSelecionado();
+        mostrarCartao(cartaoAtual);
+        return;
     } 
 
     esconderCartaoSelecionado();
-
     cartaoAtual++;
     mostrarCartao(cartaoAtual);
 });
